@@ -1,0 +1,238 @@
+:root {
+
+    --bg-color-primary: #FFFFFF;
+
+    --tipo-color-primary: #000000;
+
+    --tipo-sub-color: #888888;
+
+    --destaq-color: #B18E72;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    gap: 15px;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+header.header {
+    height: 70px;
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--tipo-color-primary);
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#btn_menu {
+    display: none;
+    transition: all .3s ease;
+    font-size: 30px;
+
+}
+
+ul.content_link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.p_link{
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.p_link:hover {
+    transition: all .3s ease;
+    border-bottom: solid 1px #000000;
+}
+.btn_contato {
+    cursor: pointer;
+    border: solid 1px var(--tipo-color-primary);
+    padding: 10px 20px;
+    background-color: transparent;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+.btn_contato:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+section.hero {
+    grid-column: span 12;
+}
+#banner_hero {
+    position: relative;
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+.info_hero {
+    top: 160px;
+    left: 244px;
+    position: absolute;
+    width: 330px;
+    height: 450px;
+    border: solid 6px var(--destaq-color);
+}
+.text_hero {
+    color: var(--bg-color-primary);
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 12ch;
+    font-size: 80px;
+    transition: all .3s ease;
+}
+.preco_hero {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.p_preco_hero {
+    font-size: 36px;
+    color: var(--bg-color-primary);
+}
+.btn_contato1{
+    cursor: pointer;
+    border: solid 1px var(--destaq-color);
+    padding: 10px 20px;
+    background-color: transparent;
+    font-weight: 500;
+    transition: all .3s ease;
+    color: var(--destaq-color);
+    margin-left: 60px;
+    margin-top: 16px;
+}
+.btn_contato1:hover{
+    transition: all .3s ease;
+    background-color: var(--destaq-color);
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+.sobre {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column: span 12;
+    justify-content: center;
+    padding: 10px 60px;
+}
+.description_sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.description_sobre>h2 {
+    font-size: 38px;
+}
+.description_sobre>p {
+    width: 55ch;
+}
+#img_sobre {
+    width: 560px;
+    height: 550px;
+    grid-area: 1 / 2 ;
+}
+@media (max-width: 1360px) {
+    body {
+    transition: all .3s ease;
+    grid-template-columns: repeat(12, 95px);
+    gap: 10px;       
+    }
+}
+@media (max-width: 1250px) {
+    body {
+        transition: all .3s ease;
+    grid-template-columns: repeat(12, 80px);
+    gap: 10px;       
+    }
+    .text_hero {
+        transition: all .3s ease;
+        font-size: 60px;
+    }
+    .info_hero {
+        transition: all .3s ease;
+        left: 180px;
+    }
+}
+@media (max-width: 1070px) {
+    body {
+        transition: all .3s ease;
+    grid-template-columns: repeat(12, 70px);
+    gap: 10px;       
+    }
+}
+@media (max-width: 950px) {
+    body {
+        transition: all .3s ease;
+    grid-template-columns: repeat(12, 60px);
+    gap: 10px;       
+    }
+}
+@media (max-width: 830px) {
+    #btn_menu {
+        transition: all .3s ease;
+        display: block;
+    }
+    .btn_contato {
+        display: none;
+    }
+    nav.menu_content {
+        display: none;
+    }
+    body {
+        transition: all .3s ease;
+        grid-template-columns: repeat(12, 40px);    
+    }
+    .text_hero {
+        transition: all .3s ease;
+        font-size: 48px;
+    }
+    .info_hero {
+        transition: all .3s ease;
+        left: 160px;
+    }
+    .p_preco_hero {
+        font-size: 28px;
+    }
+    .info_hero {
+        width: 300px;
+        height: 360px;
+    }
+
+}
+@media (max-width: 590px) {
+    body {
+        transition: all .3s ease;
+    grid-template-columns: repeat(12, 20px);
+    gap: 10px; 
+    }
+}
+@media (max-width: 350px) {
+    body {
+        transition: all .3s ease;
+    grid-template-columns: repeat(12, 20px);
+    gap: 5px; 
+    }
+}

@@ -20,6 +20,7 @@
 </head>
 <body>
     <header class="header">
+        <div class="container_header">
         <div class="logo_e_redes">
             <h2 class="logo">Hotel Califórina</h2>
             <div class="redes_sociais_hotel">
@@ -29,7 +30,7 @@
             <ul class="content_link">
                 <li class="li_links">
                     <p class="p_link">
-                        <a href="#inicio" class="link">Início</a>
+                        <a href="#hero" class="link">Início</a>
                     </p>
                 </li>
                 <li class="li_links">
@@ -44,20 +45,22 @@
                 </li>
                 <li class="li_links">
                     <p class="p_link">
-                        <a href="#destaques" class="link">Facilidades</a>
+                        <a href="#facilidades" class="link">Facilidades</a>
                     </p>
                 </li>
                 <li class="li_links">
                     <p class="p_link">
-                        <a href="#equipe" class="link">Equipe</a>
+                        <a href="#time" class="link">Equipe</a>
                     </p>
                 </li>
             </ul>
         </nav>
         <button class="btn_contato">Solicitar Orçamento</button>
         <i id="btn_menu" class='bx bx-menu-alt-right'></i>
+    </div>
     </header>
-    <section class="hero">
+    <div class="grid">
+    <section id="hero" class="hero">
         <img id="banner_hero" src="assets/img/skyhaus-header1.png" alt="">
         <div class="info_hero">
             <h1 class="text_hero">Vila Moderna de Luxo</h1>
@@ -68,15 +71,175 @@
             <button class="btn_contato1">Solicitar Orçamento</button>
         </div>
     </section>
-    <section class="sobre">
+    <div id="sobre" class="sobre">
         <div class="description_sobre">
-            <h2 class="text_sobre">Residência SkyHaus</h2>
-            <p class="p_sobre">A descrição de um imóvel é composta por 2 partes: características principais e descrição do imóvel. A seção de recursos principais é a sua oportunidade de informar aos potenciais inquilinos sobre os principais pontos de venda de sua propriedade, em formato de marcadores. A seção de descrição da propriedade permite que você se aprofunde mais.</p>
+            <div>
+                <h2 class="text_sobre">Residência SkyHaus</h2>
+                <p class="p_sobre">A descrição de um imóvel é composta por 2 partes: características principais e descrição do imóvel. A seção de recursos principais é a sua oportunidade de informar aos potenciais inquilinos sobre os principais pontos de venda de sua propriedade, em formato de marcadores. A seção de descrição da propriedade permite que você se aprofunde mais.</p>
+            </div>
+            <div class="caracteristicas_sobre">
+                <div class="container_caracteristicas">
+                    <img id="img_icon" src="assets/img/Cama.png" alt="icon_cama">
+                    <div class="info_card_caracteristicas">
+                        <p class="name_caracteristica">Camas</p>
+                        <p class="qtd_caracteristica">5</p>
+                    </div>
+                </div>
+                <div class="container_caracteristicas">
+                    <img id="img_icon" src="assets/img/banheiro.png" alt="icon_cama">
+                    <div class="info_card_caracteristicas">
+                        <p class="name_caracteristica">Banhos</p>
+                        <p class="qtd_caracteristica">7</p>
+                    </div>
+                </div>
+                <div class="container_caracteristicas">
+                    <img id="img_icon" src="assets/img/Garagem.png" alt="icon_cama">
+                    <div class="info_card_caracteristicas">
+                        <p class="name_caracteristica">Garagens</p>
+                        <p class="qtd_caracteristica">4</p>
+                    </div>
+                </div>
+                <div class="container_caracteristicas">
+                    <img id="img_icon" src="assets/img/Chicara.png" alt="icon_cama">
+                    <div class="info_card_caracteristicas">
+                        <p class="name_caracteristica">Cozinhas</p>
+                        <p class="qtd_caracteristica">2</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <img src="assets/img/skyhause-bedroom-1-q5yzal0mxx2yk24i54ut1rmpibvi03rmcaoyk99a8w.png" alt="" id="img_sobre">
         </div>
-        <div class="caracteristicas_sobre">
-            
+        
+    <section id="destaques" class="destaque">
+        <div class="header_destaque">
+            <h2 class="text_destaque">Destaques da Propriedade</h2>
+            <p class="p_destaque">A descrição de um imóvel é composta por 2 partes: características principais e descrição do imóvel. A seção de recursos principais é a sua oportunidade de contar aos inquilinos em potencial.</p>
         </div>
-        <img src="assets/img/skyhause-bedroom-1-q5yzal0mxx2yk24i54ut1rmpibvi03rmcaoyk99a8w.png" alt="" id="img_sobre">
+        <div class="container_fotos_destaque">
+            <div class="card_foto_destaque">
+                <img src="assets/img/skyhaus-highlights-img1-scaled.png" alt="imagem_destaque">
+                <div class="info_card">
+                    <h4 class="text_info_card">Vista incrível</h4>
+                    <p class="p_info_card">A vista é espetacular da banheira do deck ou do chão.</p>
+                </div>
+            </div>
+            <div class="card_foto_destaque">
+                <img src="assets/img/skyhaus-highlights-img1-scaled.png" alt="imagem_destaque">
+                <div class="info_card">
+                    <h4 class="text_info_card">Vizinhos Tranquilos</h4>
+                    <p class="p_info_card">A vista é espetacular da banheira do deck ou do chão.</p>
+                </div>
+            </div>
+            <div class="card_foto_destaque">
+                <img src="assets/img/skyhaus-highlights-img1-scaled.png" alt="imagem_destaque">
+                <div class="info_card">
+                    <h4 class="text_info_card">Segurança Habitacional</h4>
+                    <p class="p_info_card">A vista é espetacular da banheira do deck ou do chão.</p>
+                </div>
+            </div>
+        </div>
     </section>
+</div>
+<section id="facilidades" class="facilidades">
+    <div class="container_info_facilidades">
+        <div class="infos_facilidades">
+            <h2 class="text_facilidades">Comodidades SkyHaus</h2>
+            <p class="p_facilidades">A seção de recursos principais é a sua oportunidade de informar aos potenciais inquilinos sobre os principais pontos de venda de seus formatos de ponto. A descrição da propriedade permite que você se aprofunde mais na propriedade.</p>
+            <div class="caracteristicas_facilidades">
+                <div class="comididades">
+                    <p class="nome_comodidades">Piscina</p>
+                    <p class="sp_comodidades">45 Sq Ft</p>
+                </div>
+                <div class="comididades">
+                    <p class="nome_comodidades">Grande Campo de Jogos</p>
+                    <p class="sp_comodidades">80 Sq Ft</p>
+                </div>
+                <div class="comididades">
+                    <p class="nome_comodidades">Alta Segurança</p>
+                    <p class="sp_comodidades">24/7</p>
+                </div>
+                <div class="comididades">
+                    <p class="nome_comodidades">Armazenamento de Água</p>
+                    <p class="sp_comodidades">1200 Gal</p>
+                </div>
+                <div class="comididades">
+                    <p class="nome_comodidades">Porão</p>
+                    <p class="sp_comodidades">2</p>
+                </div>
+                <div class="comididades">
+                    <p class="nome_comodidades">Elevador</p>
+                    <p class="sp_comodidades">2</p>
+                </div>
+            </div>
+        </div>
+        <img id="img_facilidade" src="assets/img/skyhaus-amenities1.png" alt="img_facilidades">
+    </div>
+</section>
+<section id="time" class="time">
+    <div class="container_time">
+        <div class="fotos_time">
+            <h2 class="text_time">Nosso Time</h2>
+            <div class="flex_fotos">
+                <div class="info_time">
+                    <img id="foto_time" src="assets/img/skyhaus-member3.png" alt="">
+                    <div class="info_pessoa">
+                        <h4 class="text_pessoa">Gabriela Alves</h4>
+                        <p class="description_pessoa">Administrativo</p>
+                    </div>
+                </div>
+                <div class="info_time">
+                    <img id="foto_time" src="assets/img/skyhaus-member2.png" alt="">
+                    <div class="info_pessoa">
+                        <h4 class="text_pessoa">Jeff Mattos</h4>
+                        <p class="description_pessoa">Administrativo</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container_form">
+            <p class="p_time">Construindo um futuro com nossa ajuda. Deixe uma mensagem e nosso agente entrará em contato com você.</p>
+            <form action="">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Telefone">
+                <button class="btn_contato_form">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="contato_footer">
+        <h3 class="text_footer">Contatos</h3>
+        <p class="p_footer">Descubra todas as maneiras de aproveitar a vida residencial de luxo ao redor do mundo.
+            Av. Capitão João Velho, PE
+            Tel: +55 (81) 99885-2158</p>
+    </div>
+    <div class="faq_footer">
+        <h3 class="text_footer">FAQs</h3>
+        <p class="p_footer">
+            <a href="#">Como faço para entrar em contato?</a>
+            <a href="#">Qual é o tempo médio de resposta?</a>
+            <a href="#">Tem contrato?</a>
+        </p>
+    </div>
+    <div class="links_footer">
+        <h3 class="text_footer">Links Úteis</h3>
+        <p class="p_footer">
+            <a href="#">Propriedade</a>
+            <a href="#">Tour de vídeo</a>
+            <a href="#">Blog</a>
+        </p>
+    </div>
+    <div class="form_footer">
+        <h3 class="text_footer">Entrar em Contato</h3>
+        <form action="">
+            <input id="input_footer" type="text" placeholder="Nome Completo">
+            <input id="input_footer" type="email" placeholder="E-mail">
+            <button class="btn_contato_form_footer">Enviar</button>
+        </form>
+    </div>
+</footer>
 </body>
 </html>
